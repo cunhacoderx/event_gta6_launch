@@ -40,29 +40,27 @@
   }
 
   &__text-timer {
-    font-family: 'Russo One', sans-serif;
-    background-color: rgba(19, 19, 25, 0.9);
-    color: vars.$timerColor;
+    color: vars.$textColor;
     font-weight: bold;
     padding: 0.6rem 1rem;
     border-radius: 2rem;
-    font-size: clamp(2rem, 5vw, 4rem);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    white-space: nowrap;
+    font-size: clamp(2.5rem, 5vw, 5rem);
     margin-bottom: 8rem;
+    text-shadow: 0 0 5px vars.$timerColor, 0 0 10px vars.$timerColor,
+      0 0 15px rgba(255, 255, 255, 0.3); // brilho leve e atmosférico
+    font-family: 'Russo One', sans-serif;
   }
 
-  @media (max-width: 640px) {
-    &__container {
-      left: 50%;
-    }
+  &__text-label {
+    font-family: 'Russo One', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: vars.$textColor;
+    margin-bottom: 0.2rem;
+    text-shadow: 0 2px 5px vars.$timerColor, 1px 1px 2px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
   }
 
-  @media (max-width: 976px) {
-    &__container {
-      left: 50%;
-    }
-  }
   @media (max-width: 1024px) {
     &__container {
       left: 50%;

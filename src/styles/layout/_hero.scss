@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as vars;
+
+.hero {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/landscape.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &__container {
+    position: relative;
+    bottom: 5%;
+    left: 28%;
+    transform: translateX(-50%);
+    max-width: 1080px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    text-align: center;
+  }
+
+  &__text-timer {
+    font-family: 'Russo One', sans-serif;
+    background-color: rgba(19, 19, 25, 0.9);
+    color: vars.$timerColor;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    font-size: clamp(2rem, 5vw, 4rem);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    margin-bottom: 8rem;
+  }
+
+  @media (max-width: 640px) {
+    &__container {
+      left: 50%;
+    }
+  }
+
+  @media (max-width: 976px) {
+    &__container {
+      left: 50%;
+    }
+  }
+  @media (max-width: 1024px) {
+    &__container {
+      left: 50%;
+    }
+  }
+}

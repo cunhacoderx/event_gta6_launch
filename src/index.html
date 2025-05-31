@@ -1,13 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./images/gta_vi_mini_logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
     <title>GTA VI Lançamento</title>
     <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <header class="hero">
+      <div class="hero__container">
+        <p class="hero__text-timer">365d, 250h, 1000m e 10000s</p>
+      </div>
+    </header>
+    <section class="character character--jason character--image-right">
+      <div class="character__container" data-aos="fade-right">
+        <img class="character__image" src="./images/jason.jpg" alt="Jason Duval" />
+        <div class="character__details">
+          <h2 class="character__name">Jason Duval</h2>
+          <h3 class="character__highlight">"Se algo acontecer, tô logo atrás de você."</h3>
+          <p class="character__intro">
+            Jason cresceu entre golpistas e vigaristas. Após um período no exército tentando deixar sua adolescência conturbada para trás, ele se viu nas Keys usando o máximo das suas habilidades a serviço dos traficantes locais. Talvez seja a hora de tentar algo novo.
+          </p>
+          <blockquote class="character__quote">
+            “Mais um dia no paraíso, certo?”
+          </blockquote>
+          <p class="character__text">
+            Conhecer a Lucia pode ser a melhor ou a pior coisa que já aconteceu com ele. Jason sabe como ele gostaria que as coisas fossem, mas, como tudo está agora, é difícil dizer.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="character character--lucia">
+      <div class="character__container" data-aos="fade-left">
+        <img class="character__image" src="./images/lucia.jpg" alt="Lucia Caminos" />
+        <div class="character__details">
+          <h2 class="character__name">Lucia Caminos</h2>
+          <h3 class="character__highlight">"A única coisa que importa é quem você conhece e o que você tem."</h3>
+          <p class="character__intro">
+            A vida dela tem sido árdua desde então. Foi lutando pela família que ela acabou na penitenciária de Leonida. E ela saiu de lá por pura sorte. Lucia aprendeu a lição – só agir com inteligência daqui em diante.
+          </p>
+          <blockquote class="character__quote">“Uma vida com o Jason pode ser a salvação dela.”</blockquote>
+          <p class="character__text">
+            Recém-saída da prisão e pronta para mudar a própria sorte, Lucia está empenhada nos seus planos – custe o que custar.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="character character--cal character--image-right" ">
+      <div class="character__container" data-aos="fade-right">
+        <img class="character__image" src="./images/cal.jpg" alt="Cal Hampton" />
+        <div class="character__details">
+          <h2 class="character__name">Cal Hampton</h2>
+          <h3 class="character__highlight">"E se tudo na internet fosse verdade?"</h3>
+          <p class="character__intro">
+            Amigo do Jason e parceiro do Brian, o Cal se sente mais seguro quando está em casa, bisbilhotando as comunicações da Guarda Costeira com umas cervejas na mão e algumas abas anônimas abertas.
+          </p>
+          <blockquote class="character__quote">
+            “Tem pássaros demais voando em formação perfeita por aí.”
+          </blockquote>
+          <p class="character__text">
+            O Cal está na maré baixa dos Estados Unidos e é feliz assim. A paranoia casual atrai paranoicos, mas o amigo dele, Jason, tem planos maiores.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="character character--dimez">
+      <div class="character__container" data-aos="fade-left">
+        <img class="character__image" src="./images/dimez.jpg" alt="Real Dimez" />
+        <div class="character__details">
+          <h2 class="character__name">Real Dimez</h2>
+          <h3 class="character__highlight">""A grana toda nessa parada. Olha minha gêmea, visão dobrada.""</h3>
+          <p class="character__intro">
+            Bae-Luxe e Roxy, vulgo Real Dimez, são amigas desde o ensino médio – garotas com a astúcia para transformar sua época de extorsão de comerciantes locais em dinheiro honesto com suas faixas de rap intensas e uma presença implacável nas redes sociais.
+          </p>
+          <blockquote class="character__quote">
+            “A um sucesso da fama.”
+          </blockquote>
+          <p class="character__text">
+            Um precoce primeiro single de sucesso com o rapper local DWNPLY alçou a dupla Real Dimez a novas alturas. Agora, depois de cinco anos e muita confusão, elas foram contratadas pela Only Raw Records, e estão torcendo para o raio cair duas vezes no mesmo lugar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="character character--drequan character--image-right" ">
+      <div class="character__container" data-aos="fade-right">
+        <img class="character__image" src="./images/drequan.jpg" alt="Dre'Quan Priest" />
+        <div class="character__details">
+          <h2 class="character__name">Dre'Quan Priest</h2>
+          <h3 class="character__highlight">"Only Raw... Records"</h3>
+          <p class="character__intro">
+            Dre'Quan sempre foi mais malandro do que gângster. Mesmo quando traficava nas ruas para pagar as contas, fazer sucesso na música era o objetivo dele.
+          </p>
+          <blockquote class="character__quote">
+            “"As dançarinas são minha inspiração. Se for sucesso, o disco ganha o mundão."”
+          </blockquote>
+          <p class="character__text">
+            Agora que contratou a dupla Real Dimez, os dias de levar artistas para a boate de striptease do Boobie podem ter acabado para o Dre'Quan, que está com a cena de Vice City na mira.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="character character--boobie">
+      <div class="character__container" data-aos="fade-left">
+        <img class="character__image" src="./images/boobie.jpg" alt="Boobie" />
+        <div class="character__details">
+          <h2 class="character__name">Boobie Ike</h2>
+          <h3 class="character__highlight">"É tudo questão de coração – do Jack of Hearts."</h3>
+          <p class="character__intro">
+            O Boobie é uma lenda local de Vice City – e age como tal. Ele foi um dos poucos a transformar sua história nas ruas em um império legítimo, que engloba o mercado imobiliário, uma boate de striptease e um estúdio de gravação. Boobie é puro sorriso, exceto na hora de discutir negócios.
+          </p>
+          <blockquote class="character__quote">
+            “"O dinheiro da boate paga pelo estúdio e o dinheiro das drogas paga por tudo."”
+          </blockquote>
+          <p class="character__text">
+            Pode parecer que o Boobie só quer saber de si próprio, mas é a parceria dele com o jovem aspirante a magnata musical Dre'Quan pela Only Raw Records que mais desperta seu interesse – agora eles só precisam emplacar um sucesso.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="character character--brian character--image-right" ">
+      <div class="character__container" data-aos="fade-right">
+        <img class="character__image" src="./images/brian.jpg" alt="Brian Heder" />
+        <div class="character__details">
+          <h2 class="character__name">Brian Heder</h2>
+          <h3 class="character__highlight">""Nada como um Mudslide ao pôr-do-sol.""</h3>
+          <p class="character__intro">
+            O Brian é um traficante clássico da era de ouro do contrabando em Keys. Ainda repassando produtos pelo seu estaleiro com sua terceira esposa Lori, Brian já viveu o suficiente para deixar o trabalho sujo para outras pessoas.
+          </p>
+          <blockquote class="character__quote">
+            “"Carreguei tanta erva naquele avião que daria pra fazer Leonida levitar."”
+          </blockquote>
+          <p class="character__text">
+            Brian está deixando o Jason morar de graça em uma de suas propriedades – desde que ele ajude com extorsões locais e faça umas visitas para tomar a sangria da Lori de vez em quando.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="character character--raul">
+      <div class="character__container" data-aos="fade-left">
+        <img class="character__image" src="./images/raul.jpg" alt="Raul Bautista" />
+        <div class="character__details">
+          <h2 class="character__name">Raul Bautista</h2>
+          <h3 class="character__highlight">"Experiência faz diferença."</h3>
+          <p class="character__intro">
+            Confiança, charme e cérebro – Raul é um ladrão de bancos veterano que está sempre em busca de talentos prontos para assumir os riscos que trazem as maiores recompensas.
+          </p>
+          <blockquote class="character__quote">
+            “"A vida é cheia de surpresas, camarada. Seria sábio da nossa parte lembrar disso."”
+          </blockquote>
+          <p class="character__text">
+            A imprudência do Raul aumenta os riscos a cada êxito. Mais cedo ou mais tarde, a equipe dele vai precisar dobrar as apostas ou tirar as fichas da mesa.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
